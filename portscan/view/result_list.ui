@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Port Scan Result</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTableView" name="tableView"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="defaultUp">
+    <bool>false</bool>
+   </property>
+   <widget class="QMenu" name="menu_f">
+    <property name="title">
+     <string>ファイル</string>
+    </property>
+    <addaction name="action_open"/>
+    <addaction name="action_close"/>
+    <addaction name="action_save"/>
+   </widget>
+   <widget class="QMenu" name="menu_e">
+    <property name="title">
+     <string>実行</string>
+    </property>
+    <addaction name="action_scan"/>
+   </widget>
+   <addaction name="menu_f"/>
+   <addaction name="menu_e"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_close">
+   <property name="text">
+    <string>閉じる</string>
+   </property>
+  </action>
+  <action name="action_open">
+   <property name="text">
+    <string>開く</string>
+   </property>
+  </action>
+  <action name="action_save">
+   <property name="text">
+    <string>保存</string>
+   </property>
+  </action>
+  <action name="action_scan">
+   <property name="text">
+    <string>実行</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
